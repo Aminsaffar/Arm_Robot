@@ -9,6 +9,23 @@ This project simulates a UR3 robot performing a pick-and-place task using invers
 - **Seven-Segment Motion Planning:** Smooth trajectory generation using a kinematic planning model that optimizes acceleration and deceleration phases.
 - **PyBullet Simulation:** Visualizing the robot's motion using a physics engine.
 
+
+---
+
+## Table of Contents
+
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Project Structure](#project-structure)
+4. [Implementation Details](#implementation-details)
+   - [Inverse Kinematics](#inverse-kinematics)
+   - [Seven-Segment Trajectory Planning](#seven-segment-trajectory-planning)
+   - [PyBullet Simulation](#pybullet-simulation)
+   - [Data Visualization](#data-visualization)
+5. [Results](#results)
+6. [License](#license)
+7. [Acknowledgments](#acknowledgments)
+
 ---
 
 ## Installation
@@ -27,8 +44,8 @@ pip install roboticstoolbox-python spatialmath matplotlib numpy pybullet
 Clone this repository and navigate into the project directory:
 
 ```bash
-git clone https://github.com/your-username/UR3-Pick-and-Place.git
-cd UR3-Pick-and-Place
+git clone https://github.com/Aminsaffar/Arm-Robot-Pick-and-Place.git
+cd Arm-Robot-Pick-and-Place
 ```
 
 ---
@@ -41,13 +58,26 @@ To run the project, follow these steps:
 2. Run the script by executing:
 
 ```bash
-python ur3_pick_and_place.py
+python Arm-Robot-Pick-and-Place.py
 ```
 
 3. The program will simulate the UR3 robot's pick-and-place task with a smooth seven-segment trajectory in PyBullet. It will also plot various kinematic properties (e.g., joint angles, velocities, accelerations, and jerks).
 
+
 ---
 
+## Project Structure
+
+```plaintext
+.
+├── README.md         # This file
+├── Arm-Robot-Pick-and-Place.py   # Main Python script for the project
+├── plots/            # Folder where generated plots are saved
+├── results/          # Folder to store simulation logs or output data
+└── URDFs/            # URDF files for the UR3 robot and other objects (table, block)
+```
+
+---
 ## Implementation Details
 
 ### Inverse Kinematics
