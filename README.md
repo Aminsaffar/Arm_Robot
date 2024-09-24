@@ -1,5 +1,7 @@
 # UR3 Robot Pick-and-Place Simulation with Seven-Segment Trajectory Planning
 
+![arm robot pick and place](https://raw.githubusercontent.com/Aminsaffar/Arm_Robot/refs/heads/main/img/pick_and_place.gif "arm robot pick and place")
+
 ## Project Overview
 
 This project simulates a UR3 robot performing a pick-and-place task using inverse kinematics (IK) and seven-segment motion planning. The key focus areas are:
