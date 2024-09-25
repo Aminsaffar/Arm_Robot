@@ -233,16 +233,18 @@ physicsClient = p.connect(p.GUI)  # Use p.DIRECT for non-graphical mode
 p.setAdditionalSearchPath(pybullet_data.getDataPath())  # Load plane and URDF files
 # ur3 = p.loadURDF("/ur3/ur3.urdf", useFixedBase=True)
 
-
+# plane_id = p.loadURDF("plane.urdf")
 table = p.loadURDF("table/table.urdf", [0, 0, -0.63], [0, 0, 0, 1])  # Load a table
 block = p.loadURDF("cube_small.urdf", [0.4, 0, 0.02], p.getQuaternionFromEuler([0, 0, 0]))  # Pickable object
 
 ur3 = p.loadURDF(
-    "PyBullet_Template_Industrial_Robotics-main\\URDFs\\Robots\\Universal_Robots_UR3\\Universal_Robots_UR3.urdf",
+    "\\URDFs\\Robots\\Universal_Robots_UR3\\Universal_Robots_UR3.urdf",
     [0, 0, 0],
     p.getQuaternionFromEuler([0, 0, 0]),
     useFixedBase=True,
 )
+
+# %%
 
 
 
@@ -314,7 +316,7 @@ for m in range(1):
         time.sleep(time_step)
 
 # Disconnect from PyBullet
-# p.disconnect()
+p.disconnect()
 
 # %%
 
